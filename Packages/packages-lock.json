@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "com.community.netcode.networkdiscovery": {
-      "version": "file:/Users/paulharwood/Documents/GitHub/UnityTransportDiscovery",
+      "version": "1.0.1",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
       "dependencies": {
         "com.unity.netcode.gameobjects": "1.7.0"
-      }
+      },
+      "url": "https://package.openupm.com"
     },
     "com.unity.burst": {
       "version": "1.8.9",
