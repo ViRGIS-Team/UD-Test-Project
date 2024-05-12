@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.community.netcode.networkdiscovery": {
-      "version": "1.1.0",
+      "version": "1.1.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
