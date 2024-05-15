@@ -45,6 +45,7 @@ public class ExampleNetworkDiscovery : NetworkDiscovery<DiscoveryBroadcastData, 
 
     protected override bool ProcessBroadcast(IPEndPoint sender, DiscoveryBroadcastData broadCast, out DiscoveryResponseData response)
     {
+        Debug.Log($"Broadcast received from {sender.Address}");
         response = new DiscoveryResponseData()
         {
             ServerName = ServerName,
@@ -55,6 +56,25 @@ public class ExampleNetworkDiscovery : NetworkDiscovery<DiscoveryBroadcastData, 
 
     protected override void ResponseReceived(IPEndPoint sender, DiscoveryResponseData response)
     {
+        Debug.Log($"Server Found : {sender.Address}");
         OnServerFound.Invoke(sender, response);
+    }
+
+    public override void StartClient()
+    {
+        base.StartClient();
+        Debug.Log($"Client Started. IsClient is {IsClient}, IsServer is {IsServer}");
+    }
+
+    public override void StartServer()
+    {
+        base.StartServer();
+        Debug.Log($"Server Started. ");
+    }
+
+    public override void StopDiscovery()
+    {
+        base.StopDiscovery();
+        Debug.Log($"Discovery Stopped, IsClient is {IsClient}, IsServer is {IsServer}");
     }
 }

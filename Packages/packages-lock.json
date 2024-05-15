@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "com.community.netcode.networkdiscovery": {
-      "version": "1.1.1",
+      "version": "https://github.com/ViRGIS-Team/UnityTransportDiscovery.git",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {
         "com.unity.netcode.gameobjects": "1.7.0"
       },
-      "url": "https://package.openupm.com"
+      "hash": "931803c37e40f6469760188013a84b9914b93930"
     },
     "com.unity.burst": {
       "version": "1.8.13",

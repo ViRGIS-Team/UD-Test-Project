@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portRangeStart: 47770
-  portRange: 1
+  portRange: 10
   m_UniqueApplicationId: 8974997612272773387
   m_StartWithServer: 1
   ServerName: EnterName
